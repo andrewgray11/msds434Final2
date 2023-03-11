@@ -9,7 +9,7 @@ def make_prediction(inputs):
     """
     inputs_df = pd.DataFrame(
         inputs, 
-        columns=["sepal_length", "sepal_width", "petal_length", "petal_width"]
+        columns=["id","sepal_length", "sepal_width", "petal_length", "petal_width"]
         )
     predictions = model.predict(inputs_df)
     
